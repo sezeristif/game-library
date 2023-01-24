@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4B5DA344F7EFDDA0A0962648 /* Pods_game_library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58517C7BB28894E8D215C9B0 /* Pods_game_library.framework */; };
 		E543CD4729803C0E00CD7FFB /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E543CD4629803C0E00CD7FFB /* CoreDataManager.swift */; };
-		E54B42BD297898790072B2AC /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54B42BC297898790072B2AC /* UIViewControllerExtensions.swift */; };
 		E5540DD629742DD800B1B7B1 /* GamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5540DD529742DD800B1B7B1 /* GamesViewModel.swift */; };
 		E5540DD829742E0000B1B7B1 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5540DD729742E0000B1B7B1 /* GameModel.swift */; };
 		E5540DDD29742F3600B1B7B1 /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5540DDB29742F3600B1B7B1 /* GamesTableViewCell.swift */; };
@@ -20,6 +19,7 @@
 		E57A7324297C44DA00C7092B /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57A7323297C44DA00C7092B /* FavoriteModel.swift */; };
 		E57A7326297C49BB00C7092B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57A7325297C49BB00C7092B /* TabBarController.swift */; };
 		E59EF527297C18D800EDB580 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59EF526297C18D800EDB580 /* FavoritesTableViewController.swift */; };
+		E5BCD91C298061110088A963 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BCD91B298061110088A963 /* UIViewControllerExtensions.swift */; };
 		E5C92C49297E73DE003F68EC /* GameInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C92C48297E73DE003F68EC /* GameInfoViewController.swift */; };
 		E5D952B5297426E400396FA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D952B4297426E400396FA9 /* AppDelegate.swift */; };
 		E5D952B7297426E400396FA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D952B6297426E400396FA9 /* SceneDelegate.swift */; };
@@ -39,7 +39,6 @@
 		58517C7BB28894E8D215C9B0 /* Pods_game_library.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_game_library.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF8A0F98F701217B0243ECCB /* Pods-game-library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-game-library.debug.xcconfig"; path = "Target Support Files/Pods-game-library/Pods-game-library.debug.xcconfig"; sourceTree = "<group>"; };
 		E543CD4629803C0E00CD7FFB /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		E54B42BC297898790072B2AC /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtensions.swift; path = ../../UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		E5540DD529742DD800B1B7B1 /* GamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewModel.swift; sourceTree = "<group>"; };
 		E5540DD729742E0000B1B7B1 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		E5540DDB29742F3600B1B7B1 /* GamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewCell.swift; sourceTree = "<group>"; };
@@ -50,6 +49,7 @@
 		E57A7323297C44DA00C7092B /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
 		E57A7325297C49BB00C7092B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		E59EF526297C18D800EDB580 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
+		E5BCD91B298061110088A963 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		E5C92C48297E73DE003F68EC /* GameInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfoViewController.swift; sourceTree = "<group>"; };
 		E5D952B1297426E400396FA9 /* game-library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "game-library.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D952B4297426E400396FA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -138,12 +138,12 @@
 			path = Favorite;
 			sourceTree = "<group>";
 		};
-		E5BCD91A2980603C0088A963 /* Extension */ = {
+		E5BCD91A2980603C0088A963 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				E54B42BC297898790072B2AC /* UIViewControllerExtensions.swift */,
+				E5BCD91B298061110088A963 /* UIViewControllerExtensions.swift */,
 			);
-			path = Extension;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		E5C92C47297E73C2003F68EC /* GameInfo */ = {
@@ -179,7 +179,7 @@
 		E5D952B3297426E400396FA9 /* game-library */ = {
 			isa = PBXGroup;
 			children = (
-				E5BCD91A2980603C0088A963 /* Extension */,
+				E5BCD91A2980603C0088A963 /* Extensions */,
 				E543CD4529803BFF00CD7FFB /* Managers */,
 				E5EA1006297F12110007D7FD /* game-library.entitlements */,
 				E5540DD329742D0D00B1B7B1 /* Modules */,
@@ -314,12 +314,12 @@
 			files = (
 				E5540DE2297439E200B1B7B1 /* GamesTableViewHelper.swift in Sources */,
 				E5D952B9297426E400396FA9 /* GamesViewController.swift in Sources */,
-				E54B42BD297898790072B2AC /* UIViewControllerExtensions.swift in Sources */,
 				E543CD4729803C0E00CD7FFB /* CoreDataManager.swift in Sources */,
 				E57A7326297C49BB00C7092B /* TabBarController.swift in Sources */,
 				E57A7324297C44DA00C7092B /* FavoriteModel.swift in Sources */,
 				E59EF527297C18D800EDB580 /* FavoritesTableViewController.swift in Sources */,
 				E5D952B5297426E400396FA9 /* AppDelegate.swift in Sources */,
+				E5BCD91C298061110088A963 /* UIViewControllerExtensions.swift in Sources */,
 				E5D952B7297426E400396FA9 /* SceneDelegate.swift in Sources */,
 				E5540DDD29742F3600B1B7B1 /* GamesTableViewCell.swift in Sources */,
 				E5EA1002297EEFA70007D7FD /* CommentCellTableViewCell.swift in Sources */,
