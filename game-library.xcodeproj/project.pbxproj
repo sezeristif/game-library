@@ -39,7 +39,7 @@
 		58517C7BB28894E8D215C9B0 /* Pods_game_library.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_game_library.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF8A0F98F701217B0243ECCB /* Pods-game-library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-game-library.debug.xcconfig"; path = "Target Support Files/Pods-game-library/Pods-game-library.debug.xcconfig"; sourceTree = "<group>"; };
 		E543CD4629803C0E00CD7FFB /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		E54B42BC297898790072B2AC /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		E54B42BC297898790072B2AC /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtensions.swift; path = ../../UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		E5540DD529742DD800B1B7B1 /* GamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewModel.swift; sourceTree = "<group>"; };
 		E5540DD729742E0000B1B7B1 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		E5540DDB29742F3600B1B7B1 /* GamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewCell.swift; sourceTree = "<group>"; };
@@ -104,15 +104,6 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		E54B42BB2978985C0072B2AC /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				E54B42BC297898790072B2AC /* UIViewControllerExtensions.swift */,
-			);
-			name = Extensions;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		E5540DD329742D0D00B1B7B1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +136,14 @@
 				E57A7323297C44DA00C7092B /* FavoriteModel.swift */,
 			);
 			path = Favorite;
+			sourceTree = "<group>";
+		};
+		E5BCD91A2980603C0088A963 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E54B42BC297898790072B2AC /* UIViewControllerExtensions.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		E5C92C47297E73C2003F68EC /* GameInfo */ = {
@@ -180,9 +179,9 @@
 		E5D952B3297426E400396FA9 /* game-library */ = {
 			isa = PBXGroup;
 			children = (
+				E5BCD91A2980603C0088A963 /* Extension */,
 				E543CD4529803BFF00CD7FFB /* Managers */,
 				E5EA1006297F12110007D7FD /* game-library.entitlements */,
-				E54B42BB2978985C0072B2AC /* Extensions */,
 				E5540DD329742D0D00B1B7B1 /* Modules */,
 				E5D952B4297426E400396FA9 /* AppDelegate.swift */,
 				E5D952B6297426E400396FA9 /* SceneDelegate.swift */,
