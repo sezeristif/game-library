@@ -9,4 +9,5 @@ target 'game-library' do
 
   pod 'Alamofire'
   pod 'Kingfisher', '~> 7.5'
+  pod 'DropDown'
 end

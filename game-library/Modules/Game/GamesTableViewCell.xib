@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="200" id="KGk-i7-Jjw" customClass="GamesTableViewCell" customModule="game_library" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="175"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="175"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k9c-Ot-gOL">
+                        <rect key="frame" x="10" y="10" width="348" height="155"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pmf-n9-Wm0">
+                                <rect key="frame" x="6" y="6" width="336" height="99"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="E2m-Zf-X1j">
+                                <rect key="frame" x="6" y="105" width="336" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07L-cq-Swc">
+                                        <rect key="frame" x="0.0" y="14.999999999999998" width="41.333333333333336" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UGX-zk-gs6" userLabel="Rating Stack View">
+                                        <rect key="frame" x="253.33333333333329" y="14.999999999999998" width="82.666666666666657" height="20.333333333333329"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TPT-FY-a6n">
+                                                <rect key="frame" x="0.0" y="-0.33333333333333215" width="41.333333333333336" height="19.999999999999996"/>
+                                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyO-5i-Eq4" userLabel="Rating">
+                                                <rect key="frame" x="41.333333333333371" y="0.0" width="41.333333333333343" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="d5b-Yg-VqN"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwA-gG-ZyQ">
+                                <rect key="frame" x="298" y="10" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="tD7-l6-Mlq"/>
+                                    <constraint firstAttribute="width" constant="40" id="x7f-PT-wpg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="heart" catalog="system">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="favoriteButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="b7z-PB-irP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pmf-n9-Wm0" secondAttribute="trailing" constant="6" id="B8T-um-qO3"/>
+                            <constraint firstAttribute="trailing" secondItem="FwA-gG-ZyQ" secondAttribute="trailing" constant="10" id="UEy-0l-7M1"/>
+                            <constraint firstItem="pmf-n9-Wm0" firstAttribute="leading" secondItem="k9c-Ot-gOL" secondAttribute="leading" constant="6" id="Wsz-QP-mFf"/>
+                            <constraint firstItem="E2m-Zf-X1j" firstAttribute="top" secondItem="pmf-n9-Wm0" secondAttribute="bottom" id="Xat-Tr-J5c"/>
+                            <constraint firstAttribute="bottom" secondItem="E2m-Zf-X1j" secondAttribute="bottom" id="fhs-GE-G9h"/>
+                            <constraint firstItem="E2m-Zf-X1j" firstAttribute="leading" secondItem="k9c-Ot-gOL" secondAttribute="leading" constant="6" id="hVh-2j-CxT"/>
+                            <constraint firstItem="pmf-n9-Wm0" firstAttribute="top" secondItem="k9c-Ot-gOL" secondAttribute="top" constant="6" id="qCz-sk-9hO"/>
+                            <constraint firstItem="FwA-gG-ZyQ" firstAttribute="top" secondItem="k9c-Ot-gOL" secondAttribute="top" constant="10" id="vtN-zt-uco"/>
+                            <constraint firstAttribute="trailing" secondItem="E2m-Zf-X1j" secondAttribute="trailing" constant="6" id="wyZ-XH-Wqq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="k9c-Ot-gOL" secondAttribute="bottom" constant="10" id="HhX-uu-VBh"/>
+                    <constraint firstItem="k9c-Ot-gOL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="SWV-un-oSH"/>
+                    <constraint firstItem="k9c-Ot-gOL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="WaY-Ur-fib"/>
+                    <constraint firstAttribute="trailing" secondItem="k9c-Ot-gOL" secondAttribute="trailing" constant="10" id="mhu-eK-ulv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="button" destination="FwA-gG-ZyQ" id="Qbo-3x-OCm"/>
+                <outlet property="imageContent" destination="pmf-n9-Wm0" id="c7P-Dd-BNh"/>
+                <outlet property="nameLabel" destination="07L-cq-Swc" id="Spc-Qt-Iop"/>
+                <outlet property="ratingLabel" destination="pyO-5i-Eq4" id="cUK-rX-Qzj"/>
+                <outlet property="viewContainer" destination="k9c-Ot-gOL" id="mnV-Ru-LvB"/>
+            </connections>
+            <point key="canvasLocation" x="175.57251908396947" y="66.549295774647888"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
